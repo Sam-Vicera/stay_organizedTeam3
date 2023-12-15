@@ -4,18 +4,18 @@ class UserService {
 
     getAllUsers() {
 
-        let users;
+        // let users;
 
-        fetch(this.baseUrl)
+       return fetch(this.baseUrl)
                   .then(response => response.json())
                   .then(data => {
-                    users = data.map( user => {
+                    return data.map( user => {
                         return {
                             id: user.id,
                             name: user.name,
                         }
                     })
                   })
-        return users
+        
     }
 }
