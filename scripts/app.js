@@ -19,7 +19,13 @@ document.addEventListener("DOMContentLoaded", () => {
 async function loadUsers() {
     const users = await userService.getAllUsers();
 
-    console.log(users);
+
+    users.forEach(user => {
+        const option = new Option(`${user.id}. ${user.name}`);
+        userDropdown.appendChild(option)
+        
+    });
+    
 }
 
 function displayTasks() {
