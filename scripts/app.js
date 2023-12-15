@@ -28,6 +28,22 @@ async function loadUsers() {
     
 }
 
-function displayTasks() {
+function displayTasks(tasks) {
     
+    if("content" in document.createElement("template")){
+        const displayContainer = document.getElementById("tasksDisplay")
+
+        displayContainer.innerHTML = "";
+
+        console.log(toDoService.getUserTask())
+        
+        // tasks.forEach(task => {
+        //     addTask(task, displayContainer)
+        // })
+
+    }
+}
+
+function addTask(){
+
 }
