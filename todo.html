@@ -16,16 +16,20 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+
+    <script src="scripts/app.js"></script>
+    <script src="scripts/services/user_services.js"></script>
+    <script src="scripts/services/todo_services.js"></script>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button>
-              <div class="collapse navbar-collapse" id="navbarColor03">
+              <div class="collapse navbar-collapse" id="navbar">
                 <ul class="navbar-nav me-auto">
                   <li class="nav-item">
                     <a class="nav-link active" href="index.html">Home
@@ -53,8 +57,23 @@
         </select>
 
 
-        <div>
-            <span id="todoDisplay">Display:</span>
+        <div class="container">
+            <template id="toDotemplate">
+              <div class="list-group">
+                <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+                  <div class="d-flex justify-content-around">
+                    <h5 id="taskCategory"></h5>
+                    <small id="taskDeadline"></small>
+                  </div>
+                  <div class="d-flex justify-content-between align-items-center">
+                    <div><input class="form-check-input me-1" type="checkbox"></div>
+                    <p class="mb-1" id="taskDesc">Some placeholder content in a paragraph.</p>
+                    <small id="taskPriority"></small>
+                  </div>
+                </a>
+              </div>
+            </template>
+
         </div>
     </main>
     
