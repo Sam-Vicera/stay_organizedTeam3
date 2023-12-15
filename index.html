@@ -11,57 +11,115 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    
+
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="css/style.css"/>
   </head>
   <body>
-
     <header>
-        <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
-            <div class="container-fluid">
-              <a class="navbar-brand" href="#">Navbar</a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarColor03">
-                <ul class="navbar-nav me-auto">
-                  <li class="nav-item">
-                    <a class="nav-link active" href="index.html">Home
-                      <span class="visually-hidden">(current)</span>
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="todo.html">Todos</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="new_todo.html">New Todos</a>
-                  </li>
-            
-                </ul>
-               
-              </div>
-            </div>
-          </nav>
+      <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarColor03"
+            aria-controls="navbarColor03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarColor03">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link active" href="index.html"
+                  >Home
+                  <span class="visually-hidden">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="todo.html">Todos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="new_todo.html">New Todos</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <main>
-        <div class="row d-flex">
-            <div class="col-md-12 d-flex justify-content-center" id="informationBlock">
-                placeholder
-            </div>
-            <div class="col-md-3 d-flex justify-content-center" id="templateBlock">
-                placeholder
+
+        <h1 class="text-center">Find your ToDo List</h1>
+      <div class="row d-flex">
+        <div class="col-md-6" id="informationBlock">
+          <h3 class="text-center mb-1">Our Mission</h3>
+          <p>
+            XYZ Tech, a forward-thinking technology company, has recently
+            designed a groundbreaking website aimed at enhancing productivity
+            and organization. Their innovative platform offers users the ability
+            to create and manage trackable to-do lists seamlessly. With an
+            intuitive and user-friendly interface, the website allows
+            individuals and teams to set tasks, prioritize activities, and
+            monitor progress in real-time. XYZ Tech's commitment to creating an
+            efficient and personalized task management experience sets their
+            website apart, catering to the needs of users seeking a streamlined
+            approach to stay organized and achieve their goals.
+          </p>
+       </div>
+       <div class="col-md-6 m-2 text-center">
+        <img src="images/OIG..jpg" style="margin-top: 150px;">
+       </div>
+       </div>
+       <div class="row">
+        <div class="col"></div>
+        <div class="col">
+            <div class=" col-md-12 text-center" id="templateBlock">
+                <h3>Template Carousel</h3>
+              </div>
             </div>
         </div>
+       </div>
     </main>
 
-    <footer>
+   <!-- Remove the container if you want to extend the Footer to full width. -->
 
+
+    <section class="">
+    <!-- Footer -->
+    <footer class="text-center text-white" style="background-color: #0a4275;">
+      <!-- Grid container -->
+      <div class="container p-4 pb-0">
+        <!-- Section: CTA -->
+        <section class="">
+          <p class="d-flex justify-content-center align-items-center">
+            <span class="me-3">Register for free</span>
+            <button type="button" class="btn btn-outline-light btn-rounded">
+              Sign up!
+            </button>
+          </p>
+        </section>
+        <!-- Section: CTA -->
+      </div>
+      <!-- Grid container -->
+  
+      <!-- Copyright -->
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+      </div>
+      <!-- Copyright -->
     </footer>
+    <!-- Footer -->
+  </section>
+    
+  
+  <!-- End of .container -->
   </body>
 </html>
